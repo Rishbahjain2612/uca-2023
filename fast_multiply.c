@@ -69,6 +69,8 @@ char* add_bit_strings(char* x, char* y)
       if(temp >= 2) {
         carry = 1;
         temp = temp%2;
+      }else{
+        carry=0;
       }
       result[n] = temp+'0';
       n--;
